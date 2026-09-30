@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <script src="Form.js" defer></script>
+</head>
+
+<body>
+    <div style="display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;">
+        <div id="form" style="
+            max-height: fit-content;
+            max-width: fit-content;
+            border: 2px solid black;
+            border-radius: 2px;
+            background-color: aqua;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;">
+            <form>
+                <label>
+                    <h3>Student Registration Form</h3>
+                </label>
+                <br>
+                <label>Enter First Name</label>
+                <input type="text" id="firstName"  placeholder="enter First name">
+
+                <br><br>
+                <label>Enter Last Name</label>
+                <input type="text" id="lastName" placeholder="enter Last name">
+
+                <br><br>
+                <label>Enter Mail</label>
+                <input type="email" id="mail">
+
+                <br><br>
+                <label>Enter Age</label>
+                <input type="number" id="age" placeholder="enter age" min="1" max="100">
+
+                <br><br>
+                <label>Select Gender</label>
+                <input type="radio" value="male" id="male" name="gender">
+                <label value="male">Male</label>
+
+                <input type="radio" value="female" id="female" name="gender">
+                <label value="female">Female</label>
+
+                <input type="radio" value="male" id="other" name="gender">
+                <label value="other">Other</label>
+                <br><br>
+
+                <label for="course">Select Course</label>
+
+                <select id="course" name="course">
+                    <option value="CSE-AIDS">CSE-AIDS</option>
+                    <option value="CSE-AIML">CSE-AIML</option>
+                    <option value="EC">EC</option>
+                </select>
+                <button type="button" id="showData" >Show Data</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
