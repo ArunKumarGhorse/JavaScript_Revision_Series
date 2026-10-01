@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // cmds for localStorage usable in console not in node.js enviroment
+        localStorage.setItem("name","arun");
+        localStorage.getItem("name");
+        localStorage.removeItem("name");
+        localStorage.clear();
+
+        const user = { name: "Arun", age: 21 };
+        localStorage.setItem("user", JSON.stringify(user));
+        const user_data = JSON.parse(localStorage.getItem("user"));
+
+        // cmds for sessionStorage usable in browser console, not in Node.js environment
+        sessionStorage.setItem("name", "arun");
+        sessionStorage.getItem("name");
+        sessionStorage.removeItem("name");
+        sessionStorage.clear();
+
+        const user2 = { name: "Arun", age: 21 };
+        sessionStorage.setItem("user", JSON.stringify(user));
+        const user2_data = JSON.parse(sessionStorage.getItem("user"));
+    </script>
+</body>
+</html>
